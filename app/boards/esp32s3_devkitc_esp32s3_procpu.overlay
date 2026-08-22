@@ -1,0 +1,18 @@
+/* Enable a disabled peripheral */
+&uart0 {
+    status = "okay";
+};
+
+/* Add an LED definition */
+/ {
+    aliases {
+        led0 = &led_0;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        led_0: led_0 {
+            gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+        };
+    };
+};
