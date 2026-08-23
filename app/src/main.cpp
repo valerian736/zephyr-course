@@ -8,6 +8,6 @@ int main(void) {
     gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE);
     while (1) {
         gpio_pin_toggle_dt(&led);
-        k_msleep(1000);
+        k_msleep(CONFIG_LED_BLINK_SLEEP_TIME);
     }
 }
