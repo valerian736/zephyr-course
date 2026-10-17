@@ -1,0 +1,6 @@
+board:
+  name: mythrill_s3_scratch
+  full_name: Mythrill S3 Scratch
+  vendor: espressif
+  socs:
+  - name: esp32s3
